@@ -1,0 +1,51 @@
+
+<%- include('navbar') %> 
+
+<body>
+	
+	
+	<div class="bigdiv" >
+		<div class="card text-center">
+		<div class="card-header" style="background-color:rgba(245, 241, 171, 0.58);"> <b>COMPRESS</b>  (<b>.txt</b> Files Only and should contain more than 50 words) </div>
+		<div class="align" id="step1">
+			<div class="card-body">
+			<form method="POST" enctype="multipart/form-data" class="form" id="fileform" action="/compress">
+				<input class="file-input-button" name="filee" type="file" class="input">
+				<button type="submit" id="submitbtn"  class="upload-button" class="input">Compress</button>
+				<!-- <input class="upload-button" type="submit"  value=""> -->
+			</form>
+			<br>
+		</div>
+			<!-- Upload File -->
+		</div>
+		 </div>
+		 <br>
+		 <div class="card text-center">
+			<div class="card-header" style="background-color:rgba(245, 241, 171, 0.58);"> <b>DECOMPRESS</b>  (<b>.cmp</b> Files Only) </div>
+			<div class="align" id="step1">
+				<div class="card-body">
+		<form method="POST" enctype="multipart/form-data" class="form" id="fileform" action="/decompress">
+					<input class="file-input-button" name="filee" type="file" class="input">
+					<button type="submit" id="submitbtn"  class="upload-button" class="input">Decompress</button>
+					
+				</form>
+				<br>
+			</div>
+				
+			</div>
+			
+			 </div>	
+			 <div style="color: red;" class="text-center">No file is stored on the server</div>	
+		<br>
+		
+	</div>
+
+	
+
+	
+</body>
+
+	<%- include('footer') %>
+
+
+</html>
